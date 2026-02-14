@@ -1,0 +1,88 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --primary: #1e3a8a;
+    --danger: #dc2626;
+    --text: #111827;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 16px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+
+button,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background: var(--danger);
+    color: white;
+}
+
+select {
+    background: var(--card);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: var(--card);
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.distance {
+    color: var(--danger);
+    font-weight: bold;
+}
+
+.call {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.sos {
+    margin-top: 20px;
+    background: var(--card);
+    padding: 12px;
+    border-radius: 10px;
+}

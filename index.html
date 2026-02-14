@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline Emergency Locator</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>🚑 Emergency Locator</h1>
+        <button id="darkToggle">🌙</button>
+    </header>
+
+    <p id="status" class="status">Checking network...</p>
+
+    <section class="controls">
+        <button id="getLocationBtn">📍 Find Nearest Help</button>
+        <button id="voiceSOS">🎤 Voice SOS</button>
+
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="hospital">Hospital</option>
+            <option value="police">Police</option>
+            <option value="fire_station">Fire</option>
+            <option value="bloodbank">Blood Bank</option>
+        </select>
+    </section>
+
+    <p id="coords">Location: Not fetched</p>
+
+    <section id="results">
+        <h2>Nearest Emergency Resources</h2>
+        <ul id="resourceList"></ul>
+    </section>
+
+    <section class="sos">
+        <h3>🚨 Quick SOS Numbers (India)</h3>
+        <ul>
+            <li>Police / Emergency: <strong>112</strong></li>
+            <li>Ambulance: <strong>108</strong></li>
+            <li>Fire: <strong>101</strong></li>
+        </ul>
+    </section>
+
+    <!-- CONNECTING JAVASCRIPT HERE -->
+    <script src="script.js"></script>
+</body>
+
+</html>
